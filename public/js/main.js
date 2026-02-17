@@ -52,6 +52,23 @@ document.addEventListener('DOMContentLoaded', () => {
         particlesContainer.appendChild(p);
     }
 
+    // --- 3.5. 3D HERO INTERACTION ---
+    const heroSection = document.getElementById('hero');
+    const cube = document.querySelector('.cube');
+    if (heroSection && cube) {
+        heroSection.addEventListener('mousemove', (e) => {
+            const x = e.clientX / window.innerWidth - 0.5;
+            const y = e.clientY / window.innerHeight - 0.5;
+
+            // Add mouse rotation to the base animation
+            // We use CSS variable or direct transform. 
+            // Since there's an animation loop, we might want to just offset it or use a wrapper.
+            // Simplified approach: Just tilt the scene container slightly
+            const scene = document.querySelector('.scene-3d');
+            scene.style.transform = `translate(-50%, -50%) rotateY(${x * 30}deg) rotateX(${-y * 30}deg)`;
+        });
+    }
+
     // --- 4. NAVIGATION SCROLL EFFECT ---
     const nav = document.querySelector('.pill-nav');
     window.addEventListener('scroll', () => {

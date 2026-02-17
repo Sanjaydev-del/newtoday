@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel & Wellness Resort Kaskady | Luxury Redefined</title>
+    <meta name="description" content="Experience luxury, wellness, and gastronomy at Hotel Kaskady in Slovakia. A 4-star resort with thermal pools, premium suites, and exceptional dining.">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="loading">
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+
+    <!-- Navigation -->
+    <nav class="pill-nav">
+        <div class="nav-content">
+            <a href="#" class="logo">KASKADY</a>
+            <div class="nav-links">
+                <a href="#hero">Home</a>
+                <a href="#rooms">Rooms</a>
+                <a href="#wellness">Wellness</a>
+                <a href="#gastro">Gastro</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <button class="nav-book-btn" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Book Now</button>
+        </div>
+    </nav>
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress"></div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Section 1: Hero -->
+        <section id="hero" class="hero-section">
+            <div class="hero-bg">
+                <div class="morphing-blob"></div>
+                <div class="particles-container" id="particles"></div>
+            </div>
+            <div class="hero-content">
+                <span class="hero-label">EST. 2005</span>
+                <h1 class="hero-title">Luxury <br>Redefined</h1>
+                <p class="hero-subtitle">Where Innovation Meets Timeless Elegance</p>
+                <div class="cta-wrapper">
+                    <a href="#rooms" class="cta-button"><span>EXPLORE EXPERIENCE</span></a>
+                </div>
+            </div>
+            <div class="scroll-indicator"><span>SCROLL</span></div>
+        </section>
+
+        <!-- Section 2: Rooms (Horizontal Scroll) -->
+        <section id="rooms" class="rooms-container">
+            <div class="rooms-sticky-wrapper">
+                <div class="rooms-track">
+                    <!-- Panel 1 -->
+                    <article class="room-panel panel-1">
+                        <div class="panel-content">
+                            <span class="giant-number">01</span>
+                            <span class="category-label">Classic Collection</span>
+                            <h2 class="room-title">Rooms</h2>
+                            <p class="room-desc">Thoughtfully designed spaces where comfort meets contemporary aesthetics.</p>
+                            <p class="room-price">From €120 / night</p>
+                            <a href="#contact" class="cta-button small"><span>BOOK STAY</span></a>
+                        </div>
+                        <div class="panel-bg-blob"></div>
+                    </article>
+                    <!-- Panel 2 -->
+                    <article class="room-panel panel-2">
+                        <div class="panel-content">
+                            <span class="giant-number">02</span>
+                            <span class="category-label">Premium Collection</span>
+                            <h2 class="room-title">Suites</h2>
+                            <p class="room-desc">Expansive living spaces with bespoke furnishings. Where luxury becomes lifestyle.</p>
+                            <p class="room-price">From €210 / night</p>
+                            <a href="#contact" class="cta-button small"><span>BOOK STAY</span></a>
+                        </div>
+                        <div class="panel-bg-blob"></div>
+                    </article>
+                    <!-- Panel 3 -->
+                    <article class="room-panel panel-3">
+                        <div class="panel-content">
+                            <span class="giant-number">03</span>
+                            <span class="category-label">Luxury Collection</span>
+                            <h2 class="room-title">Lux</h2>
+                            <p class="room-desc">Reimagined in 2020. Modern architecture meets uncompromising comfort.</p>
+                            <p class="room-price">From €280 / night</p>
+                            <a href="#contact" class="cta-button small"><span>BOOK STAY</span></a>
+                        </div>
+                        <div class="panel-bg-blob"></div>
+                    </article>
+                    <!-- Panel 4 -->
+                    <article class="room-panel panel-4">
+                        <div class="panel-content">
+                            <span class="giant-number">04</span>
+                            <span class="category-label">Prestige Collection</span>
+                            <h2 class="room-title">Prestige</h2>
+                            <p class="room-desc">The pinnacle of sophisticated living. An experience beyond accommodation.</p>
+                            <p class="room-price">From €320 / night</p>
+                            <a href="#contact" class="cta-button small"><span>BOOK STAY</span></a>
+                        </div>
+                        <div class="panel-bg-blob"></div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Wellness -->
+        <section id="wellness" class="wellness-section">
+            <div class="section-header">
+                <h2 class="section-title">Wellness & Spa</h2>
+                <p class="section-subtitle">Extensive wellness. Thermal spring. Team of therapists.</p>
+            </div>
+            <div class="cards-3d-container">
+                <div class="card-3d">
+                    <div class="card-icon">🏊</div>
+                    <h3>Thermal Pools</h3>
+                    <p>Healing mineral waters from natural thermal springs</p>
+                </div>
+                <div class="card-3d">
+                    <div class="card-icon">🔥</div>
+                    <h3>Sauna World</h3>
+                    <p>Six distinctive experiences: Finnish, Steam, Herbal, Mentol, Eucalyptus, Infrared</p>
+                </div>
+                <div class="card-3d">
+                    <div class="card-icon">💆</div>
+                    <h3>Spa Treatments</h3>
+                    <p>Master therapists craft personalized wellness journeys</p>
+                </div>
+                <div class="card-3d">
+                    <div class="card-icon">🌿</div>
+                    <h3>Herbal Rituals</h3>
+                    <p>Natural aromatherapy and botanical treatments</p>
+                </div>
+                <div class="card-3d">
+                    <div class="card-icon">🧘</div>
+                    <h3>Meditation Spaces</h3>
+                    <p>Dedicated zones for mindfulness and inner peace</p>
+                </div>
+                <div class="card-3d">
+                    <div class="card-icon">✨</div>
+                    <h3>Private Spa</h3>
+                    <p>Moroccan-inspired exclusive sanctuary</p>
+                </div>
+            </div>
+            <div class="sauna-list-wrapper">
+                <table class="sauna-table">
+                    <thead><tr><th>Sauna Type</th><th>Temp</th><th>Humidity</th></tr></thead>
+                    <tbody>
+                        <tr><td>Finnish sauna</td><td>70–95°C</td><td>8–15%</td></tr>
+                        <tr><td>Steam sauna</td><td>45–55°C</td><td>100%</td></tr>
+                        <tr><td>Herbal sauna</td><td>45–50°C</td><td>80–100%</td></tr>
+                        <tr><td>Mentol sauna</td><td>45–48°C</td><td>80–100%</td></tr>
+                        <tr><td>Eucalyptus sauna</td><td>45–50°C</td><td>100%</td></tr>
+                        <tr><td>Infrared sauna</td><td>40–60°C</td><td>—</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Section 4: Gallery (Bento) -->
+        <section id="gallery" class="gallery-section">
+            <h2 class="section-title dark-text">Gallery</h2>
+            <div class="bento-grid">
+                <div class="bento-item large gradient-1" data-title="Luxury Suites"></div>
+                <div class="bento-item tall gradient-2" data-title="Thermal Pools"></div>
+                <div class="bento-item gradient-3" data-title="Relaxation"></div>
+                <div class="bento-item gradient-4" data-title="Details"></div>
+                <div class="bento-item wide gradient-5" data-title="Restaurant"></div>
+                <div class="bento-item gradient-6" data-title="Events"></div>
+                <div class="bento-item gradient-1" data-title="Gardens"></div>
+                <div class="bento-item gradient-2" data-title="Lobby"></div>
+            </div>
+        </section>
+
+        <!-- Section 5: Gastronomy (Split) -->
+        <section id="gastro" class="gastro-section">
+            <div class="split-side left">
+                <div class="split-bg"></div>
+                <div class="split-content">
+                    <h2>Restaurant Koliba</h2>
+                    <p>Traditional Slovak cuisine reimagined. Fresh, seasonal, exceptional.</p>
+                    <div class="details-text"><span>🕐 Daily: 07:30–22:00</span><span>👥 Capacity: 130 guests</span></div>
+                    <div class="meal-times">Breakfast 07:00–10:00 | Lunch 12:00–15:00 | Dinner 17:30–21:00</div>
+                    <a href="#contact" class="cta-button small"><span>VIEW MENU</span></a>
+                </div>
+            </div>
+            <div class="split-side right">
+                <div class="split-bg"></div>
+                <div class="split-content">
+                    <h2>Wine Bar</h2>
+                    <p>Curated selection of premium wines from around the world.</p>
+                    <div class="details-text"><span>🍷 200+ labels</span><span>🌍 15 countries</span></div>
+                    <a href="#contact" class="cta-button small"><span>WINE LIST</span></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: Packages -->
+        <section id="packages" class="packages-section">
+            <h2 class="section-title dark-text">Stay Packages</h2>
+            <div class="packages-grid">
+                <div class="package-card">
+                    <div class="pkg-header p-grad-1"></div>
+                    <div class="pkg-content">
+                        <span class="pkg-badge">All Season</span>
+                        <h3>Wellness & Spa</h3>
+                        <p class="pkg-price">from 246€ / person</p>
+                        <p class="pkg-desc">Access to thermal pools & sauna world included.</p>
+                        <button class="cta-button small dark" onclick="selectPackage('Wellness & Spa')"><span>BOOK NOW</span></button>
+                    </div>
+                </div>
+                <div class="package-card">
+                    <div class="pkg-header p-grad-2"></div>
+                    <div class="pkg-content">
+                        <span class="pkg-badge">Exclusive</span>
+                        <h3>Wellness & Private Spa</h3>
+                        <p class="pkg-price">from 296€ / person</p>
+                        <p class="pkg-desc">Includes Moroccan-style private spa experience.</p>
+                        <button class="cta-button small dark" onclick="selectPackage('Wellness & Private Spa')"><span>BOOK NOW</span></button>
+                    </div>
+                </div>
+                <div class="package-card">
+                    <div class="pkg-header p-grad-3"></div>
+                    <div class="pkg-content">
+                        <span class="pkg-badge">Popular</span>
+                        <h3>Romantic Getaway</h3>
+                        <p class="pkg-price">from 380€ / couple</p>
+                        <p class="pkg-desc">Champagne, romantic dinner, and couples massage.</p>
+                        <button class="cta-button small dark" onclick="selectPackage('Romantic Getaway')"><span>BOOK NOW</span></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 7: Events Ticker + Info -->
+        <section id="events" class="events-section">
+            <div class="ticker-wrap">
+                <div class="ticker">
+                    <div class="ticker__item">LUXURY • WELLNESS • GASTRONOMY • EXPERIENCE • KASKADY • SLOVAKIA •</div>
+                    <div class="ticker__item">LUXURY • WELLNESS • GASTRONOMY • EXPERIENCE • KASKADY • SLOVAKIA •</div>
+                </div>
+            </div>
+            
+            <div class="events-content">
+                <div class="event-type">
+                    <h3>For Companies</h3>
+                    <p>Formal business meetings with a different atmosphere. Beautiful spaces, accommodation and quality food.</p>
+                </div>
+                <div class="event-type mid">
+                    <h3>Weddings</h3>
+                    <p>Dream weddings in luxury surroundings with personalized planning.</p>
+                </div>
+                <div class="event-type">
+                    <h3>Private Events</h3>
+                    <p>Exclusive celebrations in our premium spaces.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 8: Contact -->
+        <section id="contact" class="contact-section">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-grid">
+                <div class="contact-card-wrapper">
+                    <div class="contact-card">
+                        <div class="cc-icon">📅</div>
+                        <h3>Book Online</h3>
+                        <p>Instant confirmation. Recommended.</p>
+                        <button id="openBookingModal" class="cta-button small"><span>BOOK NOW</span></button>
+                    </div>
+                </div>
+                <div class="contact-card-wrapper">
+                    <div class="contact-card">
+                        <div class="cc-icon">✉️</div>
+                        <h3>Email Us</h3>
+                        <p>info@hotelkaskady.sk</p>
+                        <button class="cta-button small" onclick="window.location.href='mailto:info@hotelkaskady.sk'"><span>WRITE</span></button>
+                    </div>
+                </div>
+                <div class="contact-card-wrapper">
+                    <div class="contact-card">
+                        <div class="cc-icon">📞</div>
+                        <h3>Call Us</h3>
+                        <p>+421 45 530 00 44</p>
+                        <button class="cta-button small" onclick="window.location.href='tel:+421455300044'"><span>CALL</span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="address-block"><p>Lúčecká 19, 962 31 Sliač – Sielnica, Slovakia</p></div>
+
+            <!-- Booking Modal -->
+            <div id="bookingModal" class="modal hidden">
+                <div class="modal-content">
+                    <span class="close-modal">&times;</span>
+                    <h3>Book Your Stay</h3>
+                    <form id="bookingForm">
+                        <div class="form-group"><label>Name</label><input type="text" name="name" required></div>
+                        <div class="form-group"><label>Email</label><input type="email" name="email" required></div>
+                        <div class="form-group"><label>Phone</label><input type="tel" name="phone"></div>
+                        <div class="form-row">
+                            <div class="form-group half"><label>Check In</label><input type="date" id="checkIn" name="checkIn" required></div>
+                            <div class="form-group half"><label>Check Out</label><input type="date" id="checkOut" name="checkOut" required></div>
+                        </div>
+                        <div class="form-group">
+                            <label>Room Type</label>
+                            <select name="roomType" id="roomTypeInput">
+                                <option value="rooms">Classic Room (€120)</option>
+                                <option value="suites">Suite (€210)</option>
+                                <option value="lux">Lux (€280)</option>
+                                <option value="prestige">Prestige (€320)</option>
+                            </select>
+                        </div>
+                        <div class="form-group"><label>Special Requests</label><textarea name="specialRequests"></textarea></div>
+                        <button type="submit" class="cta-button full"><span>CONFIRM BOOKING</span></button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col brand-col">
+                <h2 class="footer-logo">Kaskady</h2>
+                <p>Oasis of peace and relaxation in the heart of Slovakia.</p>
+                <div class="social-links"><a href="#">FB</a><a href="#">IG</a><a href="#">YT</a><a href="#">SP</a></div>
+            </div>
+            <div class="footer-col">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="#rooms">Rooms</a></li><li><a href="#wellness">Wellness</a></li>
+                    <li><a href="#gastro">Gastro</a></li><li><a href="#packages">Packages</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Services</h4>
+                <ul><li><a href="#">Spa Treatments</a></li><li><a href="#">Thermal Pools</a></li><li><a href="#">Events</a></li></ul>
+            </div>
+            <div class="footer-col newsletter-col">
+                <h4>Stay Updated</h4>
+                <form id="newsletterForm">
+                    <input type="email" placeholder="Your email address" required><button type="submit">→</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom"><p>&copy; 2026 Hotel Kaskady. All rights reserved.</p></div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

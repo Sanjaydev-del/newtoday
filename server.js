@@ -23,7 +23,11 @@ app.use(express.json());
 app.use(express.static('public'));
 
 // Data Directory
-const DATA_DIR = path.join(__dirname, 'data');
+// On Vercel, we must use /tmp for writing. In local dev, we use ./data
+const DATA_DIR = process.env.NODE_ENV === 'production' || process.env.VERCEL
+    ? path.join('/tmp', 'data')
+    : path.join(__dirname, 'data');
+
 const FILES = {
     bookings: path.join(DATA_DIR, 'bookings.json'),
     contacts: path.join(DATA_DIR, 'contacts.json'),
@@ -51,10 +55,11 @@ async function initData() {
         await fs.mkdir(DATA_DIR, { recursive: true });
         for (const file of Object.values(FILES)) {
             try {
+                // In /tmp, files disappear on restart, so we must recreate them if missing
                 await fs.access(file);
             } catch {
                 await fs.writeFile(file, '[]');
-                console.log(`Created ${path.basename(file)}`);
+                console.log(`Created ${path.basename(file)} in ${DATA_DIR}`);
             }
         }
     } catch (error) {
@@ -70,6 +75,7 @@ async function readJson(filePath) {
         const data = await fs.readFile(filePath, 'utf8');
         return JSON.parse(data);
     } catch (error) {
+        // If read fails (e.g. file deleted by ephemeral FS), try re-init or return empty
         return [];
     }
 }
@@ -98,10 +104,6 @@ async function sendEmail({ to, subject, html }) {
 }
 
 // Routes
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'views', 'index.html'));
-});
-
 app.get('/health', (req, res) => {
     res.json({ success: true, message: "Server is running", timestamp: new Date() });
 });
